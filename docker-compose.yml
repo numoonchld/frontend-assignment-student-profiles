@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  react_dev_env:
+    image: node:latest
+    container_name: react-docker
+    working_dir: /home/app
+    ports:
+      - 3000:3000
+    environment: 
+      - PORT=3000
+    volumes: 
+      - ./client:/home/app
+    command: sh -c "npm start"
