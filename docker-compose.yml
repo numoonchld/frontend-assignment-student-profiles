@@ -10,4 +10,4 @@ services:
       - PORT=3000
     volumes: 
       - ./client:/home/app
-    command: sh -c "npm start"
+    command: sh -c "npm install && npm start"
